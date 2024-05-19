@@ -1,0 +1,19 @@
+button {
+  margin: 1rem;
+}
+
+.user-details {
+  border: 1px solid lightblue;
+  margin: auto;
+  padding: 1rem;
+  border-radius: .5rem;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-details img {
+  width: fit-content;
+  align-self: center;
+  border-radius: 50%;
+}

@@ -1,0 +1,12 @@
+<button (click)="backToList()">Back to list</button>
+<div *ngIf="user$ | async as user; else loading">
+  <div class="user-details">
+    <img [src]="user.avatar" alt="{{ user.first_name }} {{ user.last_name }}" />
+    <h2>{{ user.first_name }} {{ user.last_name }}</h2>
+    <p>ID: {{ user.id }}</p>
+    <p>Email: {{ user.email }}</p>
+  </div>
+</div>
+<ng-template #loading>
+  <p>Loading...</p>
+</ng-template>
